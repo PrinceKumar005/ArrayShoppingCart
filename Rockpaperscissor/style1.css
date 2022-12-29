@@ -1,0 +1,120 @@
+/* css links */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto:wght@100&display=swap');
+ /* HOME */
+body{
+    font-family: 'Merriweather', serif;
+    padding:0;
+    margin: 0;
+}
+/*HEADER NAV BAR */
+header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+}
+#navbar{
+    width:80%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+}
+#navbar .logo{
+    padding: 4px 10px;
+}
+#navbar .logo img{
+    height:80px;
+}
+#navbar ul{
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+#navbar ul li{
+    font-size: 30px;
+}
+/* MAIN */
+main{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main h1{
+    position: absolute;
+    top: 145px;
+    display: none;
+    font-size: xx-large;
+    transition: width 1s ease-in-out;
+}
+#gamearea{
+    width:80%;
+    display: flex;
+    margin-top:130px;
+    justify-content: center;
+    align-items: center;
+}
+#gamearea .game{
+    border:2px solid white;
+    width:80%;
+    height:50vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#gamearea .game #computer1,#player {
+   width:100%;
+}
+
+#gamearea .game .computer,.player{
+    width:50%;
+}
+/* player  */
+#gamearea .game .player img{
+    animation-name:ready;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#gamearea .game .player .play #rock1,#paper1,#scissor1{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#gamearea .game .player .play{
+    float: right;
+ }
+ /* computer  */
+#gamearea .game .computer .play #rock2,#paper2,#scissor2{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+#gamearea .game .computer img{
+    animation-name:ready1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* input button  */
+#gamearea .game .button button{
+    display: block;
+    width: 80px;
+    height:53px;
+    margin: 12px 12px 12px 0;
+    border-radius: 15px;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+ }
+
+/* ANIMATION */
+@keyframes ready{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(40deg);}
+}
+@keyframes ready1{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-40deg);}
+}
+ 
+ 
+

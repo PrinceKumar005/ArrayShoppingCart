@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(73, 123, 241);
+}
+main{
+    width: 1300px;
+    background:linear-gradient(rgb(148, 148, 225),white);
+    margin:auto;
+}
+.scorecard{
+    width: 1300px;
+    padding: 25px;
+    margin-top: 20px;
+    margin: auto;
+}
+label{
+    font-size: 20px;
+    padding: 10px;
+}
+h3{
+    padding:10px ;
+}
+h2{
+    width:1100px;
+    padding: 10px;
+    background-color: rgb(70, 74, 196);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px blue;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
